@@ -1,7 +1,7 @@
 class Dijkstra {
     public static boolean searchpath(int[][] maze, int sx, int sy, List<Integer> path) {
         int rows = maze.length, cols = maze[0].length;
-        boolean[][] visited = new boolean[rows][cols];
+        boolean[][] visited = new boolean[rows][cols];// thisis used for letting know about the path ok
         PriorityQueue<Node> open = new PriorityQueue<>();
         int[][] parent = new int[rows][cols];
         int[][] distance = new int[rows][cols];
